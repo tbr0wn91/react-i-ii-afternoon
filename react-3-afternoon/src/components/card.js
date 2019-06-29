@@ -25,7 +25,7 @@ export default class Card extends Component{
         })
         return(
             <div className="Card-parent">
-                <div>
+                <div className="card-number">
                     {id}/25
                 </div>
                 <div>

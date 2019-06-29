@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import "./navbar.css";
 
 export default class NavBar extends Component{
     constructor(){
@@ -15,8 +15,8 @@ export default class NavBar extends Component{
         console.log(this.props)
         return (
             <div>
-                <button onClick= {this.props.goBackwardFn}>Go Back</button>
-                <button onClick= {this.props.goForwardFn}>Go Forward</button>
+                <button onClick= {this.props.goBackwardFn}>Previous</button>
+                <button onClick= {this.props.goForwardFn}>Next</button>
             </div>
         )
     }

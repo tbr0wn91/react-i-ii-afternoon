@@ -57,7 +57,7 @@ class App extends Component{
     return (
       
       <div className="App">
-         hi
+         <div className="header"><span className="title">Home</span></div>
          <Card parentData = {this.state.data[this.state.index]} />
          <NavBar goForwardFn = {this.goForward}
                  goBackwardFn = {this.goBackward}/>
