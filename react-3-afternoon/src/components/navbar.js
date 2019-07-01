@@ -14,9 +14,11 @@ export default class NavBar extends Component{
     render(){
         console.log(this.props)
         return (
-            <div>
+            <div className="navbar">
+               <div className='buttons' > 
                 <button onClick= {this.props.goBackwardFn}>Previous</button>
                 <button onClick= {this.props.goForwardFn}>Next</button>
+               </div>
             </div>
         )
     }

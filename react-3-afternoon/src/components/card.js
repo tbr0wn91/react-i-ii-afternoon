@@ -28,20 +28,21 @@ export default class Card extends Component{
                 <div className="card-number">
                     {id}/25
                 </div>
-                <div>
-                    {first} {last}
+                <div className="content">
+                    <h1>
+                        {first} {last}
+                    </h1>
+
+                    <ul>
+                        <li><b>From:</b> {city}</li>
+                        <li><b>Job title:</b> {title}</li>
+                        <li><b>Employer:</b> {employer}</li>
+                    </ul>
+
+                    <ol>
+                       <b>Favorite Movies:</b> <div className="movies">{mappedMovies}</div>
+                    </ol>
                 </div>
-
-                <ul>
-                    <li>From: {city}</li>
-                    <li>Job title: {title}</li>
-                    <li>Employer: {employer}</li>
-                </ul>
-
-                <ol>
-                    {mappedMovies}
-                </ol>
-                
             </div>
         )
     }
